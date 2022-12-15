@@ -51,13 +51,13 @@ $(function(){
 		let message = 'program error. no message.';
 		
 		if(newOffice==='smileday'){
-			message = '[児童名]\n' + newName + '\n\n[事業所名]スマイル\n\n上記で登録しました。\n次回から予定の変更申請にて選択できます。';
+			message = '[児童名]\n' + newName + '\n[事業所名]\nスマイル\n\n上記で登録しました。\n次回から予定の変更申請にて選択できます。';
 		}else if(newOffice==='temu'){
-			message = '[児童名]\n' + newName + '\n\n[事業所名]てむてむ\n\n上記で登録しました。\n次回から予定の変更申請にて選択できます。';
+			message = '[児童名]\n' + newName + '\n[事業所名]\nてむてむ\n\n上記で登録しました。\n次回から予定の変更申請にて選択できます。';
 		}else if(newOffice==='hoya'){
-			message = '[児童名]\n' + newName + '\n\n[事業所名]ほやほや\n\n上記で登録しました。\n次回から予定の変更申請にて選択できます。';
+			message = '[児童名]\n' + newName + '\n[事業所名]\nほやほや\n\n上記で登録しました。\n次回から予定の変更申請にて選択できます。';
 		}else if(newOffice==='naru'){
-			message = '[児童名]\n' + newName + '\n\n[事業所名]なるなる\n\n上記で登録しました。\n次回から予定の変更申請にて選択できます。';
+			message = '[児童名]\n' + newName + '\n[事業所名]\nなるなる\n\n上記で登録しました。\n次回から予定の変更申請にて選択できます。';
 		}
 		
 		sendText(message);
