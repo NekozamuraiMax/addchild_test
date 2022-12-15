@@ -46,21 +46,20 @@ const key = params.get('key');
 
 $(function(){	
 	$('form').submit(function(){
+		const newName = document.getElementById("new-name").value;
+		const newOffice = document.getElementById("new-office").value;
+		let message = 'program error. no message.';
 		
-		const genre = document.getElementById("genre").value;
-		const freetxt= document.getElementById("textarea").value;
-		let message="None. This is not message.";
-		/*
-		if(genre==='day'){
-			message = '[放課後デイサービスへのご相談・ご意見]\n\n(本文)' + freetxt + '(本文終わり)\n\n上記の内容で送信しました。';
-		}else if(genre==='service'){
-			message = '[他のサービスに関するご相談]\n\n(本文)' + freetxt + '(本文終わり)\n\n上記の内容で送信しました。';
-		}else if(genre==='care'){
-			message = '[子育てについてのご相談]\n\n(本文)' + freetxt + '(本文終わり)\n\n上記の内容で送信しました。';
-		}else if(genre==='else'){
-			message = '[その他]\n\n(本文)' + freetxt + '(本文終わり)\n\n上記の内容で送信しました。';
+		if(newOffice==='smileday'){
+			message = '[児童名]\n' + newName + '\n\n[事業所名]スマイル\n\n上記で登録しました。\n次回から予定の変更申請にて選択できます。';
+		}else if(newOffice==='temu'){
+			message = '[児童名]\n' + newName + '\n\n[事業所名]てむてむ\n\n上記で登録しました。\n次回から予定の変更申請にて選択できます。';
+		}else if(newOffice==='hoya'){
+			message = '[児童名]\n' + newName + '\n\n[事業所名]ほやほや\n\n上記で登録しました。\n次回から予定の変更申請にて選択できます。';
+		}else if(newOffice==='naru'){
+			message = '[児童名]\n' + newName + '\n\n[事業所名]なるなる\n\n上記で登録しました。\n次回から予定の変更申請にて選択できます。';
 		}
-		*/
+		
 		sendText(message);
 		return false;
 	});
