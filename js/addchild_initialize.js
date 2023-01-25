@@ -51,13 +51,13 @@ $(function(){
 		let message = 'program error. no message.';
 		
 		if(newOffice==='smileday'){
-			message = '[児童名]\n' + newName + '\n[事業所名]\nスマイル';
+			message = '[追加申請]\n[児童名]\n' + newName + '\n[事業所名]\nスマイル';
 		}else if(newOffice==='temu'){
-			message = '[児童名]\n' + newName + '\n[事業所名]\nてむてむ';
+			message = '[追加申請]\n[児童名]\n' + newName + '\n[事業所名]\nてむてむ';
 		}else if(newOffice==='hoya'){
-			message = '[児童名]\n' + newName + '\n[事業所名]\nほやほや';
+			message = '[追加申請]\n[児童名]\n' + newName + '\n[事業所名]\nほやほや';
 		}else if(newOffice==='naru'){
-			message = '[児童名]\n' + newName + '\n[事業所名]\nなるなる';
+			message = '[追加申請]\n[児童名]\n' + newName + '\n[事業所名]\nなるなる';
 		}
 		
 		sendText(message);
